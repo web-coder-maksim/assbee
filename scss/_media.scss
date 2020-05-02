@@ -1,0 +1,260 @@
+@media(max-width: 1220px){
+	.works-slider__inner{
+		justify-content: flex-end;
+	}
+	.works-slider__item{
+		display: flex !important;
+		justify-content: center;
+		margin-left: 0;
+	}
+}
+@media(max-width: 1190px){
+	.subscribe{
+		padding-bottom: 1px;
+	}
+	.input {
+    	max-width: none;
+    	width: 100%;
+    	height: 90px;
+    	border: none;
+    	position: static;
+    	border-radius: 30px;
+    	outline: none;
+	}
+	.button {
+    	border: none;
+    	background-color: #f3392f;
+    	width: 175px;
+    	height: 109px;
+    	position: relative;
+    	top: 15px;
+    	right: 0px;
+    	left: 0;
+    	border-radius: 30px;
+    	cursor: pointer;
+    	background-image: none;
+	}
+}
+@media(max-width: 1156px){
+	.about__inner{
+		display: block;
+	}
+	.about__item{
+		max-width: none;
+		& + &{
+			margin-top: 30px;
+		}
+	}
+	.contact-form{
+		padding: 0;
+	}
+	.contact-form__inner {
+    	flex-wrap: wrap;
+	}
+	.contact-input{
+		margin-right: 20px;
+	}
+	.contact-form__box{
+		max-width: none;
+	}
+}
+@media(max-width: 1116px){
+	.header-menu__wrapper{
+		display: none;
+	}
+	.services__items{
+		display: block;
+	}
+	.services__item{
+		max-width: none;
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 1115px){
+	.heder__logo{
+		right: auto;
+		left: 68px;
+	}
+	.drop-down__menu{
+		width: 60px;
+		height: 60px;
+		border: 2px solid #fff;
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		border-radius: 20px;
+		cursor: pointer;
+		position: relative;
+	}
+	.drop-down__menu.active{
+		& + .header-menu__wrapper{
+			display: block;
+			background-color: #000;
+			position: absolute;
+			bottom: -48px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			transform: translateY(80%);
+			text-align: flex-start;
+			z-index: 10;
+			padding: 20px 0;
+			.header-menu__box{
+				display: block;
+				width: 98%;
+				margin-left: 20px;
+			}
+			.header-menu__item{
+				display: block;
+			}
+			.header-menu__link{
+				display: block;
+				// padding-bottom: 10px;
+				border: none;
+				position: relative;
+				&::after{
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 30px;
+					width: 3px;
+					height: 20px;
+					background-color: #fff;
+				}
+				&:hover{
+					border: none;
+					font-size: 24px;
+					color: #f3392f;
+				}
+			}
+		}
+	}
+	.drop-down__line{
+		width: 30px;
+		height: 3px;
+		background-color: #fff;
+		margin: 0 auto;
+		position: relative;
+		&::before,
+		&::after{
+		 	content: '';
+			width: 30px;
+			height: 3px;
+			background-color: #fff;
+			position: absolute;
+			border-radius: 20px;
+		 }
+		&::before{
+			top: 10px;
+		}
+		&::after{
+			top: -10px;
+		}
+	}
+}
+@media(max-width: 960px){
+	.header__title{
+		font-size: 70px;
+	}
+	.header-content__items{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.header-content__item{
+		margin-right: 5px;
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 900px){
+	.heder__logo{
+		right: auto;
+		left: 20px;
+	}
+	.header-menu__inner{
+		padding: 0;
+	}
+}
+@media(max-width: 815px){
+	
+}
+@media(max-width: 750px){
+	.header__title{
+		font-size: 50px;
+	}
+}
+@media(max-width: 640px){
+	.form__button-bottom{
+		width: 180px;
+	}
+}
+@media(max-width: 541px){
+	.header__title{
+		font-size: 40px;
+	}
+	.title{
+		font-size: 60px;
+	}
+}
+@media(max-width: 500px){
+	.about__box-item{
+		display: block;
+	}
+	.about__box-images{
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 470px){
+	.heder__logo{
+		width: 220px;
+		height: 100px;
+	}
+	.header-content__items {
+    	padding: 0 40px;
+ 	}
+ 	.subscribe__title {
+    	font-size: 45px;
+	}
+	.input{
+		padding-left: 10px;
+		font-size: 16px;
+		&::placeholder{
+			font-size: 16px;
+		}
+	}
+}
+@media(max-width: 420px){
+	.works-slider__images {
+    	width: 280px !important;
+	}
+}
+@media(max-width: 400px){
+	.heder__logo{
+		width: 189px;
+		font-size: 50px;
+	}
+	.about__title{
+		font-size: 27px;
+	}
+	.title{
+		font-size: 50px;
+	}
+	.subscribe__title {
+    	font-size: 35px;
+	}
+	.button{
+		width: 160px;
+		height: 90px;
+		&::before{
+			font-size: 55px;
+		}
+	}
+}
+@media(max-width: 340px){
+	.input{
+		font-size: 12px;
+		&::placeholder{
+			font-size: 12px;
+		}
+	}
+}
